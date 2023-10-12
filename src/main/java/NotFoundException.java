@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class NotFoundException {
+public class NotFoundException extends RuntimeException {
+    public NotFoundException(int id) {
+        super("Element with id: " + id + " not found");
+    }
 }
